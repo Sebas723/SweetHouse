@@ -1,2 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
+@import "primeicons/primeicons.css";
+
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #FAFAFA;
+}
+
+.fluid-horizontal-padding {
+  padding-left: clamp(1rem, 10vw, 10rem);
+  padding-right: clamp(1rem, 10vw, 10rem);
+}
+
+html, body{
+  scroll-behavior: smooth;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+input[type="text"], select {
+  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f3f5f7a9;
+}
+
+input:focus, select:focus {
+  outline: none;
+}
